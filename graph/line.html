@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script  src="jquery.min.js"></script>
+		<script src="Chart.min.js"></script>
+		<script src="linegraph.js"></script>
+		<script src="linegraphTwoDays.js"></script>
+		<script src="oneMonth.js"></script>
+		<script src="oneYear.js"></script>
+		<script src="see_hour.js"></script>
+		<script src="devices.js"></script>
+		<style>
+.chart-container {
+width: 60%;
+height: auto;
+position: absolute;
+right: 0px;			
+}	
+
+		</style>
+
+		<header>Smart Meter Graph</header>
+		<meta http-equiv="refresh" content="60">
+	</head>
+
+	<body>
+	<div>
+		The result of the cunsamption:
+	</div>
+		<div class="chart-container">
+		The result for 10 min is:<br/>
+			<canvas id="mycanvasSee_hour"></canvas>	
+		The devices from data:<br/>
+			<canvas id="mycanvas_see_devices"></canvas>	
+		This is the all watt chart consumption:<br/>
+			<canvas id="mycanvas"></canvas>
+		This the Seven days chart pass consumption:<br/>
+			<canvas id="mycanvasTwoDays"></canvas>
+		This is the on month chart:<br/>
+			<canvas id="mycanvasOneMonth"></canvas><br/>
+		This is the on Year chart:<br/>
+			<canvas id="mycanvasOneYear"></canvas><br/>
+
+		</div>
+		<div>
+			<a href="/smart_meter/index.html">Return</a>
+		</div>
+		
+
+	</body>
+</html>
